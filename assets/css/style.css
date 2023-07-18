@@ -62,6 +62,20 @@ a {
     display: flex;
 }
 
+.btn-viol {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--rsp-primary);
+    border-radius: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-viol p {
+    color: var(--rsp-secondary);
+}
+
 .txt-al-left {
     text-align: left;
 }
@@ -137,6 +151,12 @@ nav.d-flex {
     height: 30px;
 }
 
+.nav-mobile {
+    display: none;
+    color: var(--rsp-secondary);
+    margin-top: 6px;
+}
+
 /*end header*/
 
 /*start main*/
@@ -148,7 +168,7 @@ nav.d-flex {
     margin: 0 auto;
 }
 
-.jumbotron .content {
+.jumbotron .row {
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -183,7 +203,7 @@ nav.d-flex {
 }
 
 .jumbotron .card i {
-    color: var(--rsp-secondary);
+    color: var(--rsp-heanvenly);
     font-size: 4rem;
 }
 
@@ -210,7 +230,7 @@ nav.d-flex {
     background-color: var(--rsp-primary);
 }
 
-.plan .content {
+.plan .row {
     justify-content: space-evenly;
     padding-bottom: 3rem;
 }
@@ -319,11 +339,103 @@ nav.d-flex {
 }
 
 /*end section testimonials*/
+
+/*start section work*/
+.work {
+    background-color: var(--rsp-primary);
+}
+
+.work .title {
+    color: var(--rsp-secondary);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+.work .row {
+    flex-wrap: wrap;
+}
+
+.work .card {
+    margin: 0.5rem;
+    background-color: var(--rsp-secondary);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.work .card h2,
+.work .card h4 {
+    color: var(--rsp-primary);
+    padding: 1rem 0;
+}
+/*end section work*/
+
+
 /*end main*/
 
-/*start MEDIA MOBILE*/
-
-
-/*end MEDIA MOBILE*/
 
 /* start MEDIA TABLET*/
+@media screen and (max-width:768px) {
+
+    .col-t-12 {
+        width: calc(100%/12 * 12);
+        margin: 0 auto;
+    }
+    .col-t-6{
+        width: calc(100%/12*6 - 1rem);
+    }
+
+    .nav-pc {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+
+    .jumbotron .card:first-child {
+        flex-direction: column;
+    }
+
+    .plan .row{
+        flex-direction: column;
+    }
+
+    .plan .card{
+        margin-top: 1rem;
+    }
+
+    .testimonials .card-photo {
+        width: 70%;
+        aspect-ratio: 1;
+    }
+}
+
+/*start MEDIA MOBILE*/
+@media screen and (max-width:480px) {
+
+    .col-m-12 {
+        width: calc(100%/12 * 12);
+        margin: 0 auto;
+    }
+
+    .nav-pc {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .testimonials .card{
+        flex-direction: column;
+    }
+
+    .testimonials .card-photo {
+        width: 50%;
+        aspect-ratio: 1;
+    }
+
+}
+/*end MEDIA MOBILE*/
