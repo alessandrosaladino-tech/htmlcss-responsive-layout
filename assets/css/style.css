@@ -562,6 +562,16 @@ nav.d-flex {
         width: 70%;
         aspect-ratio: 1;
     }
+
+    .about-us .about h2 {
+        font-size: 40px;
+    }
+
+    .about-us .photo i {
+        font-size: 3rem;
+        right: 0.2rem;
+        top: 0;
+    }
 }
 
 /*start MEDIA MOBILE*/
@@ -589,6 +599,13 @@ nav.d-flex {
         aspect-ratio: 1;
     }
 
+    .about-us .row {
+        flex-direction: column;
+    }
+
+    .about-us .photo {
+        padding: 0;
+    }
 }
 
 /*end MEDIA MOBILE*/
