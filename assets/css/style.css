@@ -269,9 +269,56 @@ nav.d-flex {
     font-size: 1.5rem;
 }
 
-
-
 /*end section plan*/
+
+/*start section testimonials*/
+
+.testimonials .title{
+    text-align: center;
+    padding: 2rem 0;
+}
+.testimonials .title h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.testimonials .title h2{
+    color: var(--rsp-primary);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.testimonials .card{
+    background-color: var(--rsp-primary);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0.5rem;
+    border-radius: 30px;
+    margin: 2rem 0;
+}
+.testimonials .card-photo{
+    width: 15%;
+    aspect-ratio: 1;
+}
+.testimonials .card-photo > img{
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonials .card-content{
+    color: var(--rsp-secondary);
+    padding: 2rem;
+}
+
+.testimonials .card-content h4{
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+/*end section testimonials*/
 /*end main*/
 
 /*start MEDIA MOBILE*/
